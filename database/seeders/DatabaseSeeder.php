@@ -76,7 +76,9 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
-        $filedata = file_get_contents('http://127.0.0.1:8000/csvjson.json');
+//      $filedata = file_get_contents('http://127.0.0.1:8000/csvjson.json');
+        
+        $filedata = file_get_contents('https://prospingo.cnabil.com/csvjson.json');
         $details = json_decode($filedata);
         foreach ($details as $d) {
             $p = Prospect::create([
