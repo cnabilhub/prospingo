@@ -1,0 +1,370 @@
+[
+    {
+        "name": "clicpiece",
+        "email": "clicpiece@orange.fr",
+        "site_url": "clicpiece.com",
+        "telephone": "",
+        "business_type_id": 3,
+        "data_source_id": 5
+    },
+    {
+        "name": "cartegrise77130",
+        "email": "a.cartegrise.v@gmail.com",
+        "site_url": "cartegrise77130.business.site",
+        "telephone": 768508688,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "agencecartegrise",
+        "email": "ACG.34M@GMAIL.COM",
+        "site_url": "agencecartegrise.com",
+        "telephone": "",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "alsace-carte-grise",
+        "email": "alsace.cartegrise@gmail.com",
+        "site_url": "alsace-carte-grise.fr",
+        "telephone": 649649275,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "bonnetmecaartisanalesarlbma",
+        "email": "bat-mecanique-generale@orange.fr",
+        "site_url": "bonnetmecaartisanalesarlbma.site-solocal.com",
+        "telephone": 553807079,
+        "business_type_id": 3,
+        "data_source_id": 5
+    },
+    {
+        "name": "leservicecartegrise",
+        "email": "cartegrisenancy@gmail.com",
+        "site_url": "leservicecartegrise.fr",
+        "telephone": 383415607,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "scgauto.site-solocal",
+        "email": "cartesgrises74@gmail.com",
+        "site_url": "scgauto.site-solocal.com",
+        "telephone": 33980698964,
+        "business_type_id": 1,
+        "data_source_id": 5
+    },
+    {
+        "name": "agencecartegrise",
+        "email": "CESSION.SIV@GMAIL.COM",
+        "site_url": "carte-grise-melun.fr",
+        "telephone": "",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "carte-grise-melun",
+        "email": "cg.melun@gmail.com",
+        "site_url": "bureaudescartesgrises.com",
+        "telephone": 950344444,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "bureaudescartesgrises",
+        "email": "conrad.automobiles@gmail.com",
+        "site_url": "e-guichet-cartegrise.fr",
+        "telephone": 450843670,
+        "business_type_id": 2,
+        "data_source_id": 5
+    },
+    {
+        "name": "e-guichet-cartegrise",
+        "email": "contact-1@e-guichet-cartegrise.fr",
+        "site_url": "agencecartegrise.fr",
+        "telephone": 33171331150,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "agencecartegrise",
+        "email": "contact.agencecartegrise@gmail.com",
+        "site_url": "servicecartegrise.eu",
+        "telephone": 33241786664,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "servicecartegrise",
+        "email": "contact@agenceautoarcades.com",
+        "site_url": "bbcars.fr",
+        "telephone": 329245875,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "bbcars",
+        "email": "contact@bbcars.fr",
+        "site_url": "cartegrise-etrangere.com",
+        "telephone": 603958015,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrise-etrangere",
+        "email": "contact@cartegrise-etrangere.com",
+        "site_url": "cartegrise1001.com",
+        "telephone": 148209604,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "Carte Grise Toulouse",
+        "email": "contact@cartegrise1001.com",
+        "site_url": "cartegrise37.fr",
+        "telephone": 973138037,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrise37",
+        "email": "contact@cartegrise37.fr",
+        "site_url": "cartegriseagen.fr",
+        "telephone": 607452729,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegriseagen",
+        "email": "contact@cartegriseagen.fr",
+        "site_url": "cartegrisebeauvais.fr",
+        "telephone": 553676276,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrisebeauvais",
+        "email": "contact@cartegrisebeauvais.com",
+        "site_url": "cartegriseexpress.com",
+        "telephone": 344470759,
+        "business_type_id": 1,
+        "data_source_id": 5
+    },
+    {
+        "name": "cartegriseexpress",
+        "email": "contact@cartegriseexpress.com",
+        "site_url": "cartegrisefacile.com",
+        "telephone": 899494774,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrisefacile",
+        "email": "contact@cartegrisefacile.fr",
+        "site_url": "cartegriserapide.com",
+        "telephone": 977833556,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegriserapide",
+        "email": "contact@cartegriserapide.com",
+        "site_url": "encreecoplus.fr",
+        "telephone": "",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "encreecoplus",
+        "email": "contact@encreecoplus.fr",
+        "site_url": "hopcartegrise.fr",
+        "telephone": 494217330,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "hopcartegrise",
+        "email": "contact@hopcartegrise.fr",
+        "site_url": "immatriculationcartegrise.fr",
+        "telephone": 890400506,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "immatriculationcartegrise",
+        "email": "contact@immatriculationcartegrise.fr",
+        "site_url": "leguichetdelacartegrise.fr",
+        "telephone": 176440050,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "Le Guichet de la Carte Grise",
+        "email": "contact@leguichetdelacartegrise.fr",
+        "site_url": "nouvellecartegrise.fr",
+        "telephone": 33986537575,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "nouvellecartegrise",
+        "email": "contact@nouvellecartegrise.fr",
+        "site_url": "oui-carte-grise.fr",
+        "telephone": 33892180246,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "oui-carte-grise",
+        "email": "contact@oui-carte-grise.fr",
+        "site_url": "servicecartegrise-epinal.fr",
+        "telephone": 33987788806,
+        "business_type_id": 2,
+        "data_source_id": 5
+    },
+    {
+        "name": "servicecartegrise-epinal",
+        "email": "contact@servicecartegrise-epinal.fr",
+        "site_url": "servicecartegrise.fr",
+        "telephone": 664541083,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "servicecartegrise",
+        "email": "contact@servicecartegrise.fr",
+        "site_url": "svpcartegrise.fr",
+        "telephone": 695243445,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "SVP CARTE GRISE",
+        "email": "contact@svpcartegrise.fr",
+        "site_url": "telecartegrise.com",
+        "telephone": 33783328078,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "telecartegrise",
+        "email": "contact@telecartegrise.com",
+        "site_url": "flash-carte-grise.fr",
+        "telephone": "",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "flash-carte-grise",
+        "email": "flashcartegrise78@gmail.com",
+        "site_url": "alwayscar.fr",
+        "telephone": 130944304,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "alwayscar",
+        "email": "hello@alwayscar.fr",
+        "site_url": "carte-grise-st-jean-de-luz.fr",
+        "telephone": "",
+        "business_type_id": 3,
+        "data_source_id": 6
+    },
+    {
+        "name": "carte-grise-st-jean-de-luz",
+        "email": "immat.bab@gmail.com",
+        "site_url": "assurimmat.fr",
+        "telephone": 620530141,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "ASSURIMMAT",
+        "email": "info@assurimmat.fr",
+        "site_url": "montlucon@cartaplac.com",
+        "telephone": 624220717,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "CARTAFRANCE",
+        "email": "info@cartafrance.com",
+        "site_url": "cartegrisepratique.fr",
+        "telephone": 241405884,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrisepratique",
+        "email": "infos@carte-grise-pratique.com",
+        "site_url": "carte-grise-dordogne.jimdofree.com",
+        "telephone": "",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "Carte Grise DordogneaddFOLLOW",
+        "email": "julienautoconseil@gmail.com",
+        "site_url": "cartegrise-cafe.com",
+        "telephone": 676824592,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "cartegrise-cafe",
+        "email": "larochelle@cartegrise-cafe.com",
+        "site_url": "autoprimo.com",
+        "telephone": 546286556,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "autoprimo",
+        "email": "ludovic.douchet@orange.fr",
+        "site_url": "speed-immat.fr",
+        "telephone": 553815453,
+        "business_type_id": 3,
+        "data_source_id": 5
+    },
+    {
+        "name": "speed-immat",
+        "email": "merignac@speed-immat.fr",
+        "site_url": "autocartegrise.com",
+        "telephone": "05 57 65 04 57",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "autocartegrise",
+        "email": "perols@autocartegrise.com",
+        "site_url": "topcartegrise.fr",
+        "telephone": 467711786,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "topcartegrise",
+        "email": "service-client@topcartegrise.fr",
+        "site_url": "guichet-carte-grise-express.fr",
+        "telephone": 185511313,
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "guichet-carte-grise-express",
+        "email": "sopichar@outlook.fr",
+        "site_url": "sites.google.comsitextrememoto83",
+        "telephone": "06 63 65 49 70",
+        "business_type_id": 1,
+        "data_source_id": 6
+    },
+    {
+        "name": "xtrememoto83",
+        "email": "xtrememoto83@gmail.com",
+        "site_url": "#",
+        "telephone": 494597809,
+        "business_type_id": 1,
+        "data_source_id": 6
+    }
+]
