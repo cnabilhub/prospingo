@@ -46,7 +46,7 @@
 
 
                             <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                Email : {{$prospect->email}}
+                                {{$prospect->email}}
                             </td>
 
                             <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
