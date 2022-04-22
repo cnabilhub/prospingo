@@ -12,7 +12,7 @@ class ProspectController extends Controller
     {
         $user = User::find(Auth()->user()->id);
         return view('prospects.index')->with([
-            'prospects' => $user->prospects
+            'prospects' => $user->prospects()->orderBy('created_at', 'DESC')->get()
         ]);
     }
 

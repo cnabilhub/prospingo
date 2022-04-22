@@ -25,12 +25,12 @@
 
             <div class=" input-group p-3">
                 <label class="block"> Email :</label>
-                <input type="email" class="c-input " name="email" value="{{old('email')}}" required>
+                <input type="email" class="c-input " name="email" value="{{old('email')}}">
             </div>
 
             <div class="input-group p-3">
                 <label class="block"> Telephone :</label>
-                <input type="text" class="c-input " name="telephone" value="{{old('telephone')}}" required>
+                <input type="text" class="c-input " name="telephone" value="{{old('telephone')}}">
             </div>
 
 

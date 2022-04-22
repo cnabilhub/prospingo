@@ -25,12 +25,12 @@
 
             <div class=" input-group p-3">
                 <label class="block"> Email :</label>
-                <input type="email" class="c-input " name="email" value="{{$prospect->email}}" required>
+                <input type="email" class="c-input " name="email" value="{{$prospect->email}}">
             </div>
 
             <div class="input-group p-3">
                 <label class="block"> Telephone :</label>
-                <input type="text" class="c-input " name="telephone" value="{{$prospect->telephone}}" required>
+                <input type="text" class="c-input " name="telephone" value="{{$prospect->telephone}}">
             </div>
 
 
@@ -49,7 +49,7 @@
                           name="note">{{old('note')}}</textarea>
             </div>
         </div>
-        <button class="btn-primary"> Add prospect</button>
+        <button class="btn-primary"> Update prospect</button>
     </form>
     <script>
         var data = [

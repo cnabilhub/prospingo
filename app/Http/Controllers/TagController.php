@@ -22,9 +22,9 @@ class TagController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+
     }
 
     /**
@@ -35,7 +35,17 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'color' => 'nullable',
+        ]);
+
+        Tag::create([
+            'name' => $request->name,
+            'color' => $request->color,
+            'user_id' => Auth()->user()->id,
+        ]);
+        return back()->with(['message' => 'Tag created']);
     }
 
     /**
@@ -57,7 +67,7 @@ class TagController extends Controller
      */
     public function edit(Tag $tag)
     {
-        //
+        return view('tags.edit', ['tag' => $tag]);
     }
 
     /**
@@ -69,7 +79,18 @@ class TagController extends Controller
      */
     public function update(Request $request, Tag $tag)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'color' => 'nullable',
+        ]);
+
+        $tag->update([
+            'name' => $request->name,
+            'color' => $request->color,
+        ]);
+        $tag->save();
+
+        return redirect(route('tags.index'))->with(['message' => 'Tag updated']);
     }
 
     /**
@@ -80,6 +101,8 @@ class TagController extends Controller
      */
     public function destroy(Tag $tag)
     {
-        //
+        $tag->delete();
+        return back()->with(['message' => 'Tage deleted ']);
+
     }
 }
