@@ -37,15 +37,15 @@ class ProspectController extends Controller
         ]);
 
         $prospect['site_url'] = str_replace("https://", "", $prospect['site_url']);
+        $prospect['site_url'] = str_replace("http://", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("www.", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("www", "", $prospect['site_url']);
-        $prospect['site_url'] = str_replace("http://", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("/", "", $prospect['site_url']);
 
         $prospect['user_id'] = Auth()->user()->id;
 
         foreach ($prospect as $key => $value) {
-            $prospect[$key] = strtolower($value);
+            $prospect[$key] = trim(strtolower($value));
         }
         $new_prospect = Prospect::create($prospect);
         $new_prospect->tags()->attach($request->tags);
