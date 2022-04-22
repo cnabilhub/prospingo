@@ -12,21 +12,21 @@
                     <thead class="border-b bg-gray-800">
                     <tr>
                         <th scope="col" class="text-sm font-medium text-white px-2 py-1">
-                            Created at
+                            URL
                         </th>
 
                         <th scope="col" class="text-sm font-medium text-white px-2 py-1">
-                            Info
+                            Name
                         </th>
 
                         <th scope="col" class="text-sm font-medium text-white px-2 py-1">
-                            Tags
+                            Email
                         </th>
-
 
                         <th scope="col" class="text-sm font-medium text-white px-2 py-1">
-                            Note
+                            Telephone
                         </th>
+
                         <th scope="col" class="text-sm font-medium text-white px-2 py-1">
                             Actions
                         </th>
@@ -35,40 +35,24 @@
                     <tbody>
                     @forelse($prospects as $key =>$prospect)
                         <tr class="bg-white border-b">
-                            <td class="flex flex-wrap text-sm font-light px-2 py-1 whitespace-nowrap">
-                                {{$prospect->created_at}}
+
+                            <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
+                                {{$prospect->site_url}}
                             </td>
-                            <td>
-                                <ul class="grid grid-rows-1 grid-gap-1">
-                                    <li class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                        Name : {{$prospect->name}}
-                                    </li>
-                                    <li class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                        URL : {{$prospect->site_url}}
-                                    </li>
-                                    <li class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                        Email : {{$prospect->email}}
-                                    </li>
-                                    <li class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                        Telephone : {{$prospect->telephone}}
-                                    </li>
-                                </ul>
+
+                            <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
+                                {{$prospect->name}}
                             </td>
 
 
-                            <td class="flex flex-wrap text-sm font-light px-2 py-1 whitespace-nowrap">
-                                @forelse($prospect->tags as $tag)
-                                    <span
-                                        class="text-{{$tag->color}}-500 bg-{{$tag->color}}-200  p-1 px-2 rounded-full mr-2 mt-2 ">{{$tag->name}} </span>
-                                @empty
-                                    No tags
-                                @endforelse
+                            <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
+                                Email : {{$prospect->email}}
                             </td>
 
-
-                            <td class=" text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
-                                {{$prospect->note?? 'No note'}}
+                            <td class="text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap">
+                                {{$prospect->telephone}}
                             </td>
+
                             <td class=" text-sm text-gray-900 font-light px-2 py-1 whitespace-nowrap flex">
                                 <a href="{{route('prospects.edit',$prospect->id)}}"
                                    class="btn-gray">Edit</a>
