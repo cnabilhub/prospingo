@@ -33,9 +33,12 @@ class ProspectController extends Controller
             'email' => 'required|email|unique:prospects,email',
             'telephone' => 'nullable',
             'site_url' => 'required',
+            'note' => 'nullable',
         ]);
 
         $prospect['site_url'] = str_replace("https://", "", $prospect['site_url']);
+        $prospect['site_url'] = str_replace("www.", "", $prospect['site_url']);
+        $prospect['site_url'] = str_replace("www", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("http://", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("/", "", $prospect['site_url']);
 
@@ -67,7 +70,30 @@ class ProspectController extends Controller
 
     public function update(Request $request, Prospect $prospect)
     {
-        //
+
+        $prospect_validated = $request->validate([
+            'name' => 'required',
+            'telephone' => 'nullable',
+            'site_url' => 'nullable',
+            'note' => 'nullable',
+            'email' => 'nullable',
+        ]);
+
+        $prospect_validated['user_id'] = Auth()->user()->id;
+
+        foreach ($prospect_validated as $key => $value) {
+            $prospect_validated[$key] = strtolower($value);
+        }
+        $prospect->name = $prospect_validated['name'];
+        $prospect->email = $prospect_validated['email'];
+        $prospect->telephone = $prospect_validated['telephone'];
+        $prospect->site_url = $prospect_validated['site_url'];
+        $prospect->note = $request->note;
+        $prospect->tags()->detach();
+        $prospect->tags()->attach($request->tags);
+        $prospect->save();
+        return redirect(route('prospects.edit', $prospect->id))->with(['message' => 'Prospect Updated ']);
+
     }
 
     public function destroy(Prospect $prospect)

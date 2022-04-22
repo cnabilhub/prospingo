@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create prospects') }}
+            {{ __('Edit prospects') }}
         </h2>
     </x-slot>
     @isset($error)
@@ -9,8 +9,10 @@
             {{$error}}
         </div>
     @endisset
-    <form class="p-4 " method="post" action="{{route('prospects.store')}}">
+
+    <form class="p-4 " method="post" action="{{route('prospects.update',$prospect->id)}}">
         @csrf
+        @method('PUT')
         <div class="grid md:grid-cols-2">
 
             <div class="input-group p-3">
@@ -37,16 +39,15 @@
             <div class="input-group p-3">
                 <label class="block"> Business type :</label>
                 <select type="text" class="c-input tags" name="tags[]" multiple="multiple">
-
                 </select>
             </div>
 
 
             <div class="input-group p-3">
-                <label class="block"> Data source :</label>
-                <textarea type="text"
+                <label class="block">Note : </label>
+                <textarea name="note" type="text"
                           class="w-full bg-yellow-100 text-yellow-600 outline-yellow-700 focus:outline-none focus:border-none"
-                          name="note">{{old('note')}}</textarea>
+                >{{$prospect->note}}</textarea>
             </div>
         </div>
         <button class="btn-primary"> Update prospect</button>
@@ -59,7 +60,7 @@
                 text: "{{$tag->name}}",
                 @foreach($prospect->tags as $old_tag)
                     @if($old_tag->id == $tag->id)
-                selected: true
+                selected: true,
                 @endif
                 @endforeach
             },
