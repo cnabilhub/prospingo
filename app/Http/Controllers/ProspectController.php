@@ -42,6 +42,15 @@ class ProspectController extends Controller
         $prospect['site_url'] = str_replace("www", "", $prospect['site_url']);
         $prospect['site_url'] = str_replace("/", "", $prospect['site_url']);
 
+        $prospect['telephone'] = str_replace(".", "", $prospect['telephone']);
+        $prospect['telephone'] = str_replace(" ", "", $prospect['telephone']);
+        $prospect['telephone'] = str_replace("-", "", $prospect['telephone']);
+
+        $prospect['telephone'] = trim($prospect['telephone']);
+        $prospect['email'] = trim($prospect['email']);
+        $prospect['site_url'] = trim($prospect['site_url']);
+        $prospect['name'] = trim($prospect['name']);
+
         $prospect['user_id'] = Auth()->user()->id;
 
         foreach ($prospect as $key => $value) {
